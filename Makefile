@@ -10,9 +10,9 @@ upgrade: upgrade-bundles compile-command-t
 install: cleanup install-ctags update link
 
 link:
-	ln -sfn ~/workspace/dotvim/ ~/.vim
-	ln -sfn ~/workspace/dotvim/vimrc ~/.vimrc
-	ln -sfn ~/workspace/dotvim/vimrc.after ~/.vimrc.after
+	ln -sfn `pwd`/ ~/.vim
+	ln -sfn `pwd`/vimrc ~/.vimrc
+	ln -sfn `pwd`/vimrc.after ~/.vimrc.after
 
 cleanup:
 	rm -rf bundle
