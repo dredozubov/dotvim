@@ -21,10 +21,12 @@ nmap <leader>p :NERDTreeFind<CR>
 
 " nerdcommenter
 " ,/ to invert comment on the current line/selection
-nmap <leader>/ :call NERDComment(0, "invert")<cr>
-vmap <leader>/ :call NERDComment(0, "invert")<cr>
+nmap <leader>c :call NERDComment(0, "invert")<cr>
+vmap <leader>c :call NERDComment(0, "invert")<cr>
 
+" Taglist
 " ,t to show tags window
+let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags'
 let Tlist_Show_Menu=1
 nmap <leader>t :TlistToggle<CR>
 

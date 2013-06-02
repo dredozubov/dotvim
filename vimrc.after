@@ -1,0 +1,19 @@
+" ---------------
+" Color
+" ---------------
+set background=dark
+colorscheme jellybeans
+
+" ---------------
+" Backups
+" ---------------
+
+set backup
+set backupdir=~/.vim_backup
+set directory=~/.vim_tmp
+" setting font and fontsize
+set gfn=Menlo:h12
+set wrap
+
+" flake8
+"autocmd BufWritePost *.py call Flake8()
