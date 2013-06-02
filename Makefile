@@ -7,7 +7,7 @@ update: install-vundle bundles compile-command-t
 
 upgrade: upgrade-bundles compile-command-t
 
-install: cleanup update link
+install: cleanup install-ctags update link
 
 link:
 	ln -sfn ~/workspace/dotvim/ ~/.vim
@@ -16,6 +16,10 @@ link:
 
 cleanup:
 	rm -rf bundle
+
+install-ctags:
+	# sane exuberant ctags
+	brew install ctags-exuberant
 
 install-vundle:
 	test -d bundle/vundle || (mkdir -p bundle && cd bundle && git clone https://github.com/gmarik/vundle.git)

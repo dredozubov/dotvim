@@ -73,12 +73,11 @@ announcements of new versions, tips, etc.
 <a name=installation>
 ##### Installation
 
-From your homedirectory (on Linux/Mac OSX):
+From your ~/workspace (on Linux/Mac OSX):
 
-* `git clone git://github.com/astrails/dotvim.git`
-* `ln -sfn dotvim .vim`
-* `ln -sfn dotvim/vimrc .vimrc`
-* `cd .vim; make install`
+* `git clone https://github.com/dredozubov/dotvim.git`
+* `cd dotvim`
+* `make install`
 
 
   > Note: if you already have `~/.vim` `~/.vimrc` REMOVE THEM (you might want to backup them first :)
