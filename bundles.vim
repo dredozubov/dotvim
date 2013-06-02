@@ -45,6 +45,7 @@ Bundle 'apidock.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Bundle 'vim-scripts/jellybeans.vim'
 
 " syntax support
 Bundle 'vim-ruby/vim-ruby'

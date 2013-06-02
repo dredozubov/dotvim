@@ -1,12 +1,18 @@
 # find out where ruby is. can override this by providing environment or command
 # line variable
-RUBY ?= $(shell ./find-ruby.sh)
+# i use rvm, so..
+#RUBY ?= $(shell ./find-ruby.sh)
 
 update: install-vundle bundles compile-command-t
 
 upgrade: upgrade-bundles compile-command-t
 
-install: cleanup update
+install: cleanup update link
+
+link:
+	ln -sfn ~/workspace/dotvim/ ~/.vim
+	ln -sfn ~/workspace/dotvim/vimrc ~/.vimrc
+	ln -sfn ~/workspace/dotvim/vimrc.after ~/.vimrc.after
 
 cleanup:
 	rm -rf bundle
