@@ -11,6 +11,7 @@ colorscheme jellybeans
 set backup
 set backupdir=~/.vim_backup
 set directory=~/.vim_tmp
+
 " setting font and fontsize
 set gfn=Menlo:h14
 set wrap

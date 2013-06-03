@@ -6,6 +6,10 @@ hi! link ShowMarksHLo LineNr
 hi! link ShowMarksHLm LineNr
 
 " syntastic
+" basically disabling it by default
+let g:syntastic_mode_map = { 'mode': 'passive',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': ['puppet'] }
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=2
 
@@ -109,10 +113,14 @@ nmap <leader>k :Ack<space>
 let g:indentobject_meaningful_indentation = ["haml", "sass", "python", "yaml", "markdown"]
 
 " indent-guides
-let g:indent_guides_start_level = 2
+"let g:indent_guides_start_level = 2
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size = 1
+"let g:indent_guides_guide_size = 1
 let g:indent_guides_color_change_percent = 5
+"" indent-guides colors
+"let g:indent_guides_auto_colors = 0
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=magenta   ctermbg=3
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=grey ctermbg=4
 
 " VimClojure
 let g:vimclojure#ParenRainbow = 1
@@ -141,3 +149,6 @@ autocmd FileType haml let b:switch_definitions =
       \   g:switch_builtins.true_false,
       \   g:switch_builtins.true_false,
       \ ]
+
+" flake8
+"autocmd BufWritePost *.py call Flake8()

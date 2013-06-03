@@ -92,14 +92,3 @@ runtime macros/matchit.vim
 let mapleader = ","
 let maplocalleader = "\\"
 
-" indent-guides plugin colors
-let g:indent_guides_auto_colors = 0
-"" indent-guides colors
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=magenta   ctermbg=3
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=grey ctermbg=4
-
-" syntastic 
-" basically disabling it by default
-let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['puppet'] }
