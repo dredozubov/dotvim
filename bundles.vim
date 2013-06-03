@@ -5,6 +5,8 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'vim-scripts/tlib'
+Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'scrooloose/nerdcommenter'

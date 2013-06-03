@@ -15,6 +15,3 @@ set directory=~/.vim_tmp
 " setting font and fontsize
 set gfn=Menlo:h14
 set wrap
-
-" flake8
-"autocmd BufWritePost *.py call Flake8()
