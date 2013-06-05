@@ -92,3 +92,5 @@ runtime macros/matchit.vim
 let mapleader = ","
 let maplocalleader = "\\"
 
+" copy and paste to system buffer
+set clipboard=unnamed
