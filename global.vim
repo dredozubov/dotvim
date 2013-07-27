@@ -94,8 +94,3 @@ let maplocalleader = "\\"
 
 " copy and paste to system buffer
 set clipboard=unnamed
-
-" indent with spaces only
-set shiftwidth=2
-set softtabstop=2
-set expandtab

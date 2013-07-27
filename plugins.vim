@@ -32,6 +32,7 @@ vmap <leader>c :call NERDComment(0, "invert")<cr>
 " ,t to show tags window
 let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags'
 let Tlist_Show_Menu=1
+let Tlist_Process_File_Always=1
 nmap <leader>t :TlistToggle<CR>
 
 " sessionman
