@@ -45,6 +45,15 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'apidock.vim'
 
+" Haskell
+Bundle "dag/vim2hs"
+Bundle "eagletmt/neco-ghc"
+"Bundle "eagletmt/ghcmod-vim"
+Bundle "pbrisbin/html-template-syntax"
+
+" YAML
+Bundle "stephpy/vim-yaml"
+
 " color themes
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-vividchalk'
