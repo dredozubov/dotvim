@@ -37,6 +37,11 @@ Bundle 'sjl/gundo.vim'
 Bundle 'AndrewRadev/switch.vim'
 Bundle 'ervandew/supertab'
 
+"OS X stuff
+"Dash integration
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
+
 " Ruby/Rails
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
