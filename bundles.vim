@@ -46,6 +46,7 @@ Bundle 'rizzatti/dash.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rake'
+Bundle 'thoughtbot/vim-rspec'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'apidock.vim'
@@ -55,6 +56,10 @@ Bundle "dag/vim2hs"
 Bundle "eagletmt/neco-ghc"
 "Bundle "eagletmt/ghcmod-vim"
 Bundle "pbrisbin/html-template-syntax"
+Bundle 'Superior-Haskell-Interaction-Mode-SHIM'
+Bundle 'indenthaskell.vim'
+Bundle "kana/vim-filetype-haskell"
+"Bundle 'MarcWeber/vim-addon-haskell'
 
 " YAML
 Bundle "stephpy/vim-yaml"
