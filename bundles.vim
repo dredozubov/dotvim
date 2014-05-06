@@ -65,6 +65,10 @@ Bundle "kana/vim-filetype-haskell"
 " YAML
 Bundle "stephpy/vim-yaml"
 
+" Frontend
+Bundle "mustache/vim-mustache-handlebars"
+Bundle "dsawardekar/ember.vim"
+
 " color themes
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-vividchalk'
