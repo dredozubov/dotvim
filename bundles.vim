@@ -36,6 +36,7 @@ Bundle 'hsitz/VimOrganizer'
 Bundle 'sjl/gundo.vim'
 Bundle 'AndrewRadev/switch.vim'
 Bundle 'ervandew/supertab'
+Bundle 'godlygeek/tabular'
 
 "OS X stuff
 "Dash integration
