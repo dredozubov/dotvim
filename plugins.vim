@@ -113,16 +113,6 @@ nmap <leader>k :Ack<space>
 " add Markdown to the list of indentation based languages
 let g:indentobject_meaningful_indentation = ["haml", "sass", "python", "yaml", "markdown"]
 
-" indent-guides
-"let g:indent_guides_start_level = 2
-let g:indent_guides_enable_on_vim_startup = 1
-"let g:indent_guides_guide_size = 1
-let g:indent_guides_color_change_percent = 5
-"" indent-guides colors
-"let g:indent_guides_auto_colors = 0
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=magenta   ctermbg=3
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=grey ctermbg=4
-
 " VimClojure
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#DynamicHighlighting = 1
@@ -133,23 +123,3 @@ if has("mac")
 end
 nmap <leader>o :Utl
 
-" VimOrganizer
-au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
-au BufEnter *.org call org#SetOrgFileType()
-
-" Gundo
-nmap <leader>u :GundoToggle<CR>
-let g:gundo_close_on_revert = 1
-
-" Switch
-" making some of the switches defined for ruby work in HAML files
-autocmd FileType haml let b:switch_definitions =
-      \ [
-      \   g:switch_builtins.ruby_hash_style,
-      \   g:switch_builtins.ruby_string,
-      \   g:switch_builtins.true_false,
-      \   g:switch_builtins.true_false,
-      \ ]
-
-" flake8
-"autocmd BufWritePost *.py call Flake8()
