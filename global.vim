@@ -3,6 +3,10 @@ set nocompatible
 syntax on
 filetype plugin indent on
 
+" Filetype specific
+au FileType python setl sw=4 sts=4 et
+au FileType ruby setl sw=2 sts=2 et
+
 " prevent vim from adding that stupid empty line at the end of every file
 set noeol
 set binary
