@@ -98,3 +98,13 @@ let maplocalleader = "\\"
 
 " copy and paste to system buffer
 set clipboard=unnamed
+
+" make "tab" insert indents instead of tabs at the beginning of a line
+set smarttab
+
+" always uses spaces instead of tab characters
+set expandtab
+
+" xml formatter
+au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
+au FileType xsd exe ":silent %!xmllint --format --recover - 2>/dev/null"
