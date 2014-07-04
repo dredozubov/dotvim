@@ -6,7 +6,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "Bundle 'vim-scripts/tlib'
-"Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
@@ -17,23 +16,8 @@ Bundle 'YankRing.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-surround'
-"Bundle 'tsaleh/vim-align'
 Bundle 'mileszs/ack.vim'
-"Bundle 'austintaylor/vim-indentobject'
-"Bundle 'greplace.vim'
-"Bundle 'astrails/vim-powerline'
-"Bundle 'sjl/threesome.vim'
-"Bundle 'Indent-Guides'
-"Bundle 'tpope/vim-endwise'
-"Bundle 'Raimondi/delimitMate'
-"Bundle 'calendar.vim--Matsumoto'
-"Bundle 'chrisbra/NrrwRgn'
-"Bundle 'utl.vim'
-"Bundle 'hsitz/VimOrganizer'
-"Bundle 'sjl/gundo.vim'
-"Bundle 'AndrewRadev/switch.vim'
 Bundle 'ervandew/supertab'
-"Bundle 'godlygeek/tabular'
 
 "OS X stuff
 "Dash integration
@@ -53,7 +37,6 @@ Bundle "pbrisbin/html-template-syntax"
 Bundle 'Superior-Haskell-Interaction-Mode-SHIM'
 Bundle 'indenthaskell.vim'
 Bundle "kana/vim-filetype-haskell"
-"Bundle 'MarcWeber/vim-addon-haskell'
 
 " YAML
 Bundle "stephpy/vim-yaml"
