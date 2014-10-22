@@ -7,8 +7,6 @@ filetype plugin indent on
 au FileType python setl sw=4 sts=4 et
 au FileType ruby setl sw=2 sts=2 et
 
-" prevent vim from adding that stupid empty line at the end of every file
-set noeol
 set binary
 
 " utf-8/unicode support
@@ -29,9 +27,8 @@ set ruler               " line and column number of the cursor position
 set wildmenu            " enhanced command completion
 set visualbell          " use visual bell instead of beeping
 set laststatus=2        " always show the status line
-"set listchars=tab:▷⋅,trail:·,eol:$
-set listchars=tab:▷⋅,trail:·
-set list
+set listchars=tab:▷⋅,trail:·,eol:$
+"set list
 
 " highlight spell errors
 hi SpellErrors guibg=red guifg=black ctermbg=red ctermfg=black
@@ -53,10 +50,6 @@ set cinoptions=:0,(s,u0,U1,g0,t0 " some indentation options ':h cinoptions' for 
 set modelines=5         " number of lines to check for vim: directives at the start/end of file
 "set fixdel                 " fix terminal code for delete (if delete is broken but backspace works)
 set autoindent          " automatically indent new line
-
-set ts=4                " number of spaces in a tab
-set sw=4                " number of spaces for indent
-set et                  " expand tabs into spaces
 
 " mouse settings
 if has("mouse")
@@ -104,7 +97,18 @@ set smarttab
 
 " always uses spaces instead of tab characters
 set expandtab
+set ts=4                " number of spaces in a tab
+set sw=2                " number of spaces for indent
 
 " xml formatter
 au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
 au FileType xsd exe ":silent %!xmllint --format --recover - 2>/dev/null"
+
+" automatically trip empty line at the eof
+function BufferCleanup()
+  :%s/\s\+$//e " remove trailing spaces
+  :v/\_s*\S/d  " remove useless newlines at the eof
+  :noh         " disable search highlighting
+endfunction
+
+au BufWritePre * call BufferCleanup()

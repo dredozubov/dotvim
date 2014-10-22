@@ -9,10 +9,8 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
-"Bundle 'AutoComplPop'
 Bundle 'taglist.vim'
 Bundle 'vim-scripts/AutoTag'
-Bundle 'YankRing.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-surround'
@@ -21,12 +19,11 @@ Bundle 'ervandew/supertab'
 
 "OS X stuff
 "Dash integration
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
+"Bundle 'rizzatti/funcoo.vim'
+"Bundle 'rizzatti/dash.vim'
 
 " Ruby/Rails
 Bundle 'tpope/vim-rails'
-Bundle 'thoughtbot/vim-rspec'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 
 " Haskell

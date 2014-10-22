@@ -17,8 +17,8 @@ link:
 cleanup:
 	rm -rf bundle
 
+# sane exuberant ctags
 install-ctags:
-	# sane exuberant ctags
 	brew install ctags-exuberant
 
 install-vundle:
