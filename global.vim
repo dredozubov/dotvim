@@ -105,10 +105,13 @@ au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
 au FileType xsd exe ":silent %!xmllint --format --recover - 2>/dev/null"
 
 " automatically trip empty line at the eof
-function BufferCleanup()
-  :%s/\s\+$//e " remove trailing spaces
+function! BufferCleanup()
+  let line = line('.')
+  let col = col('.')
   :v/\_s*\S/d  " remove useless newlines at the eof
+  :%s/\s\+$//e " remove trailing spaces
   :noh         " disable search highlighting
+  call cursor(line, col)
 endfunction
 
 au BufWritePre * call BufferCleanup()
