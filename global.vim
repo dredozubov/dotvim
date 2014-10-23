@@ -17,7 +17,6 @@ if has('multi_byte')
   set encoding=utf-8
 end
 " presentation settings
-set number              " precede each line with its line number
 set numberwidth=3       " number of culumns for line numbers
 set textwidth=0         " Do not wrap words (insert)
 set nowrap              " Do not wrap words (view)
@@ -99,6 +98,8 @@ set smarttab
 set expandtab
 set ts=4                " number of spaces in a tab
 set sw=2                " number of spaces for indent
+
+set relativenumber      " precede each line relative(from cursor) line number
 
 " xml formatter
 au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"

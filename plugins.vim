@@ -105,9 +105,6 @@ nmap <leader>f :let @/="\\<<C-R><C-W>\\>"<CR>:set hls<CR>:silent Ggrep -w "<C-R>
 
 " same in visual mode
 :vmap <leader>f y:let @/=escape(@", '\\[]$^*.')<CR>:set hls<CR>:silent Ggrep -F "<C-R>=escape(@", '\\"#')<CR>"<CR>:ccl<CR>:cw<CR><CR>
-" Ack
-" ,a for Ack
-nmap <leader>k :Ack<space>
 
 " vim-indentobject
 " add Markdown to the list of indentation based languages
@@ -116,10 +113,3 @@ let g:indentobject_meaningful_indentation = ["haml", "sass", "python", "yaml", "
 " VimClojure
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#DynamicHighlighting = 1
-
-" Utl.vim
-if has("mac")
-  let g:utl_cfg_hdl_scm_http_system = "!open '%u'"
-end
-nmap <leader>o :Utl
-
