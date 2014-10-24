@@ -8,7 +8,7 @@ au FileType python setl sw=4 sts=4 et
 
 au FileType ruby setl sw=2 sts=2 et
 " use rake instead of make for ruby files
-set makeprg=NO_COLOR=true\ bundle exec rake
+set makeprg="NO_COLOR=true\ bundle exec rake"
 
 set binary
 
@@ -103,11 +103,7 @@ set ts=4                " number of spaces in a tab
 set sw=2                " number of spaces for indent
 
 set relativenumber      " precede each line relative(from cursor) line number
-
-" open vimrc in vertical split window
-nnoremap <leader>vv :vsplit $MYVIMRC<cr>
-" source vimrc
-nnoremap <leader>sv :source $MYVIMRC<cr>
+set number              " shows current line number in addition to relative numbers
 
 " xml formatter
 au FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
@@ -117,9 +113,12 @@ au FileType xsd exe ":silent %!xmllint --format --recover - 2>/dev/null"
 function! BufferCleanup()
   let line = line('.')
   let col = col('.')
-  :v/\_s*\S/d  " remove useless newlines at the eof
-  :%s/\s\+$//e " remove trailing spaces
-  :noh         " disable search highlighting
+  " remove useless newlines at the eof
+  ":v/\_s*\S/d
+  " remove trailing spaces
+  :%s/\s\+$//e
+  " disable search highlighting
+  set nohlsearch
   call cursor(line, col)
 endfunction
 

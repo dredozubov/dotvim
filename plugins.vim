@@ -98,9 +98,9 @@ let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'mixed', 'line']
 
 " Fugitive
 " ,g for Ggrep
-nmap <leader>g :silent Ggrep<space>
+nmap <silent> <leader>g :Ggrep<Space>
 
-" ,f for global git serach for word under the cursor (with highlight)
+" ,f for global git search for word under the cursor (with highlight)
 nmap <leader>f :let @/="\\<<C-R><C-W>\\>"<CR>:set hls<CR>:silent Ggrep -w "<C-R><C-W>"<CR>:ccl<CR>:cw<CR><CR>
 
 " same in visual mode
