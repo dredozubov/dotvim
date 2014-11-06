@@ -3,10 +3,13 @@ set nocompatible
 syntax on
 filetype plugin indent on
 
-" Filetype specific
-au FileType python setl sw=4 sts=4 et
+" filetypes configuration
+au BufNewFile,BufRead *.lhs set filetype=haskell
 
+" Filetype specific indents
+au FileType python setl sw=4 sts=4 et
 au FileType ruby setl sw=2 sts=2 et
+
 " use rake instead of make for ruby files
 set makeprg="NO_COLOR=true\ bundle exec rake"
 
@@ -29,8 +32,9 @@ set ruler               " line and column number of the cursor position
 set wildmenu            " enhanced command completion
 set visualbell          " use visual bell instead of beeping
 set laststatus=2        " always show the status line
-set listchars=tab:▷⋅,trail:·,eol:$
-"set list
+"set listchars=tab:▷⋅,trail:·,eol:$
+set listchars=tab:▷⋅,trail:·
+set list
 
 " highlight spell errors
 hi SpellErrors guibg=red guifg=black ctermbg=red ctermfg=black
@@ -118,8 +122,10 @@ function! BufferCleanup()
   " remove trailing spaces
   :%s/\s\+$//e
   " disable search highlighting
-  set nohlsearch
   call cursor(line, col)
 endfunction
 
 au BufWritePre * call BufferCleanup()
+
+" add git branch to statusline
+" set statusline +=%{fugitive#statusline()}

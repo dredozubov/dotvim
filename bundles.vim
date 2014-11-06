@@ -60,6 +60,7 @@ Bundle 'VimClojure'
 Bundle 'slim-template/vim-slim'
 Bundle 'wting/rust.vim'
 Bundle 'raichoo/purescript-vim'
+Bundle 'jimenezrick/vimerl'
 
 " Support and minor
 Bundle 'kana/vim-textobj-user'
