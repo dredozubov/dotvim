@@ -18,10 +18,7 @@ nmap <leader>dg :diffget<CR>
 
 set completeopt=menuone,preview,longest
 
-" driving me insane this thing
-command Q q
-command Qa qa
-command QA qa
+" use uppercase W and E
 command -nargs=* -complete=file W w <args>
 command -nargs=* -complete=file E e <args>
 
@@ -58,3 +55,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " show help for word under cursor
 map <leader>h "zyiw:exe "h ".@z.""<CR>
+
+" haskell bindings
+nnoremap <leader>gc :GhcModCheckAndLintAsync<CR>
+noremap <leader>gt :GhcModType<CR>
