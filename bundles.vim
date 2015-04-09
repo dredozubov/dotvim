@@ -29,11 +29,14 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 " Haskell
 Bundle "dag/vim2hs"
 Bundle "eagletmt/neco-ghc"
-"Bundle "eagletmt/ghcmod-vim"
+Bundle "eagletmt/ghcmod-vim"
 Bundle "pbrisbin/html-template-syntax"
 Bundle 'Superior-Haskell-Interaction-Mode-SHIM'
 Bundle 'indenthaskell.vim'
 Bundle "kana/vim-filetype-haskell"
+
+" Idris
+Bundle "idris-hackers/idris-vim"
 
 " YAML
 Bundle "stephpy/vim-yaml"
@@ -64,3 +67,4 @@ Bundle 'jimenezrick/vimerl'
 
 " Support and minor
 Bundle 'kana/vim-textobj-user'
+Bundle 'Shougo/vimproc'
